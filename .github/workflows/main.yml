@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          git clone https://github.com{{github.repository}}.git .
+          git clone https://github.com/ultimate-yuri/Q3TA_cooptest.git .
           git checkout ${{github.sha}}
           cd code/game
           ./game_ta.sh
