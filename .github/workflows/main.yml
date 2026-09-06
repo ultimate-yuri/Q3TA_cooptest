@@ -4,3 +4,5 @@ on:
 jobs:
   main:
     runs-on: windows-latest
+    steps:
+      - run: echo hello
