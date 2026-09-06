@@ -10,4 +10,5 @@ jobs:
           git checkout ${{github.sha}}
           cd code/game
           pwd
+          chmod +x ./game_ta.sh
           ./game_ta.sh
