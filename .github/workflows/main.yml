@@ -3,6 +3,10 @@ on:
 
 jobs:
   main:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
-      - run: echo hello
+      - run: |
+          git clone https://x-access-token:${{secrets.GITHUB_TOKEN}}@://github.com{{github.repository}}.git .
+          git checkout ${{github.sha}}
+          cd code/game
+          ./game_ta.sh
