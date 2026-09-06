@@ -9,4 +9,4 @@ jobs:
           git clone https://github.com/ultimate-yuri/Q3TA_cooptest.git .
           git checkout ${{github.sha}}
           cd code/game
-          game_ta.bat
+          ./game_ta.bat
