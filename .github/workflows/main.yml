@@ -8,6 +8,7 @@ jobs:
       - run: |
           git clone https://github.com/ultimate-yuri/Q3TA_cooptest.git .
           git checkout ${{github.sha}}
-          cd code/game
-          set PATH
+          cd code/win32/mod-sdk-setup/bin
+          set PATH=%PATH%;%cd%
+          cd ../../../game
           ./game_ta.bat
